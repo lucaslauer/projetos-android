@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"> <!-- Correção aqui: adicionado o símbolo de abertura < -->
+
+    <corners android:radius="16dp" /> <!-- Raio para arredondar -->
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/blue" /> <!-- Cor da borda -->
+
+    <solid android:color="@color/blue"/> <!-- Cor de fundo -->
+
+</shape>

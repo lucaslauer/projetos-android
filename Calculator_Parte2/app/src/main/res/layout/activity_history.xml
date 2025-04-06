@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Campo de texto que exibirá o histórico -->
+    <TextView
+        android:id="@+id/txt_history"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:text="HISTÓRICO:"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black" />
+
+    <!-- Lista de histórico -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txt_history_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                android:layout_marginStart="0.2dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_back"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/blue"
+        android:onClick="openHistory"
+        android:text="VOLTAR" />
+
+</LinearLayout>
